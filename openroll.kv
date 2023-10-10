@@ -23,6 +23,7 @@
             rows: 2
             padding: 10
             spacing: 2
+            size_hint: (1, .33)
 
             BoxLayout:
                 orientation: "vertical"
@@ -164,11 +165,28 @@
                         background_color:(.75, 0, 0, 1)
                         on_press: root.remove_die("d100")
 
+            BoxLayout:
+                orientation: "vertical"
+                size_hint: (.2, .5)
+                Button:
+                    text: "Roll"
+                    size_hint: (1, 0.75)
+                    font_size: 60
+                    background_color: (0.008, 0.439, 0.008, 1)
+                    color: (1, 1, 1, 1)
+                    on_press: root.roll_dice()
+                Button:
+                    text: "Clear"
+                    size_hint: (1, 0.25)
+                    background_color: (0.439, 0.008, 0.008, 1)
+                    color: (1, 1, 1, 1)
+                    on_press: root.clear_dice()
+
         TextInput:
             id: dice_display
             text: "Rolling: "
             halign: "left"
-            font_size: 60
+            font_size: 50
             editable: False
             size_hint: (1, .5)
 
@@ -178,4 +196,4 @@
             halign: "center"
             font_size: 120
             editable: False
-            size_hint: (1, 1)
+            size_hint: (1, .17)
