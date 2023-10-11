@@ -1,9 +1,9 @@
 <Button>
-    font_size: 20
+    font_size: 10
     background_normal: ''
 
 <Label>:
-    font_size: 40
+    font_size: 20
     background_color: (.5, .5, .5, 1)
     canvas.before:
         Color:
@@ -30,7 +30,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d4"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -50,7 +50,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d6"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -70,7 +70,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d8"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -90,7 +90,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d10"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -110,7 +110,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d12"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -130,7 +130,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d20"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -150,7 +150,7 @@
                 size_hint: (.2, .5)
                 Label:
                     text: "d100"
-                    font_size: 60
+                    font_size: 30
                     size_hint: (1, 0.75)
                 GridLayout:
                     cols: 2
@@ -171,7 +171,7 @@
                 Button:
                     text: "Roll"
                     size_hint: (1, 0.75)
-                    font_size: 60
+                    font_size: 30
                     background_color: (0.008, 0.439, 0.008, 1)
                     color: (1, 1, 1, 1)
                     on_press: root.roll_dice()
@@ -186,7 +186,7 @@
             id: dice_display
             text: "Rolling: "
             halign: "left"
-            font_size: 50
+            font_size: 25
             editable: False
             size_hint: (1, .5)
 
@@ -194,6 +194,6 @@
             id: result_display
             text: ""
             halign: "center"
-            font_size: 120
+            font_size: 60
             editable: False
             size_hint: (1, .17)
